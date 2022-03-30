@@ -6,7 +6,16 @@
 
 class Vector {
 private:
+    int dim_n; // for specifying the dimension of the vector in the vector space R^n
 
+    int * vec; // the array for storing the value of the vector
+
+public:
+    Vector(); // empty ctor
+
+    Vector(int dim, const  int * v, int size); // ctor with parameter
+
+    ~Vector(); // dctor
 };
 
 
