@@ -10,11 +10,15 @@ using std::cin;
 
 
 int main() {
-    int v[] = {1, 2, 6};
+    const int SIZE = 5;
+    int v[SIZE] = {1, 2, 6, 3, -1};
 
     try {
-        Vector v1(3, v, LEN(v));
-    } catch (const char * exp) {cout << exp << endl;}
+        Vector v1(SIZE, v, LEN(v)), v2(3);
+        cout << v1 << endl;
+        cin >> v2;
+        cout << v2 << endl;
+    } catch (const char * exp) { cout << exp << endl;}
 
     return 0;
 }
